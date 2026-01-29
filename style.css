@@ -1,0 +1,398 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #112547;
+    color: #e6edf3;
+}
+
+/* ================= GLOBAL ================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.dark {
+    background: #0d0b2a;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: #58a6ff;
+}
+
+/* ================= HEADER ================= */
+
+/* ================= HEADER HOVER ================= */
+
+header {
+    position: fixed;
+    top: -90px; /* cache le header */
+    left: 0;
+    width: 100%;
+    background: rgba(14,17,23,0.95);
+    border-bottom: 1px solid #1f2933;
+    z-index: 1000;
+    transition: top 0.4s ease;
+}
+
+/* Zone invisible pour détecter la souris */
+header::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+/* Quand la souris touche le header OU la zone */
+header:hover,
+header:hover::before {
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.logo span {
+    color: #58a6ff;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c9d1d9;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* HEADER layout */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bloc profil bien collé à gauche */
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Texte nom */
+.header-text h1 {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: white;
+    white-space: nowrap;
+}
+
+.header-text span {
+    font-size: 0.75rem;
+    color: #8b949e;
+}
+
+/* Photo */
+.header-profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #58a6ff;
+}
+
+/* ================= HEADER PROFILE ================= */
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #58a6ff;
+}
+
+.header-text h1 {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: white;
+}
+
+.header-text span {
+    font-size: 0.75rem;
+    color: #8b949e;
+}
+
+/* Header pleine largeur */
+.nav-full {
+    width: 100%;
+    padding: 12px 30px; /* espace intérieur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right ul {
+    max-width: 1100px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at top, #0d1b2a, #0e1117);
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+.hero-content span {
+    color: #58a6ff;
+}
+
+.hero-contentp {
+    margin: 25px 0;
+    max-width: 650px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    padding: 12px 24px;
+    background: #58a6ff;
+    color: #0e1117;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #58a6ff55;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #58a6ff;
+    color: #58a6ff;
+}
+
+/* ================= A PROPOS ================= */
+
+.about-text {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.about-infos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: #111827;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1f2933;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: #58a6ff;
+}
+
+/* ================= PROJETS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #0f1623;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1f2933;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #58a6ff;
+}
+
+.card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-item {
+    max-width: 700px;
+    margin: auto;
+    background: #0f1623;
+    padding: 25px;
+    border-left: 4px solid #58a6ff;
+    border-radius: 8px;
+}
+
+/* ================= FORMATION ================= */
+
+.formation-list {
+    list-style: none;
+    max-width: 700px;
+    margin: auto;
+}
+
+.formation-list li {
+    padding: 15px;
+    border-bottom: 1px solid #1f2933;
+}
+
+/* ================= CENTRES D’INTERÊT ================= */
+
+.interets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.interet-card {
+    background: #0f1623;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #1f2933;
+    transition: 0.3s;
+}
+
+.interet-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: #58a6ff;
+    box-shadow: 0 0 20px #58a6ff22;
+}
+
+.interet-card h4 {
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background: #0e1117;
+    border: 1px solid #1f2933;
+    border-radius: 6px;
+    color: white;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0b0f14;
+    border-top: 1px solid #1f2933;
+    color: #8b949e;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        display: none; /* simple, peut être remplacé par un menu burger plus tard */
+    }
+}
