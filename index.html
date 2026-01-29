@@ -20,14 +20,13 @@
                 <h1>Nathan Andrieu</h1>
                 <span>Étudiant en informatique</span>
             </div>
-            <img src="tête.png" alt="Photo de Nathan Andrieu">
         </div>
 
         <!-- Navigation + bouton CV à droite -->
         <nav class="nav-right">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#apropos">Présentation</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#experiences">Expériences</a></li>
@@ -43,31 +42,43 @@
 
 <!-- ================= HERO ================= -->
 <section id="accueil" class="hero">
-    <div class="container hero-content">
-        <h2>Bonjour, moi c’est <span>Nathan Andrieu</span></h2>
-        <p>Étudiant en informatique passionné par l’administration système, les réseaux et le déploiement d’infrastructures sécurisées.</p>
-        <div class="hero-buttons">
-            <a href="#projets" class="btn">Voir mes projets</a>
-            <a href="#contact" class="btn btn-outline">Me contacter</a>
-        </div>
+    <div class="hero-center">
+        <h1 class="hero-name">NATHAN ANDRIEU</h1>
+        <p class="hero-subtitle">PORTFOLIO</p>
     </div>
 </section>
 
 <!-- ================= A PROPOS ================= -->
 <section id="apropos" class="section">
-    <div class="container">
-        <h3 class="section-title">À propos</h3>
-        <p class="about-text">
-            Étudiant en BUT Informatique à l’Université Toulouse III Paul Sabatier, je me spécialise dans l’administration système et réseau.
-            Je recherche un stage orienté infrastructure, sécurité et automatisation.
-        </p>
-        <div class="about-infos">
-            <div><strong>📍 Localisation :</strong> L’Hospitalet (46)</div>
-            <div><strong>🎯 Objectif :</strong> Stage en administration système et réseau</div>
-            <a href="CV_NATHAN.pdf" download class="btn btn-cv">MON CV</a>
+    <div class="container about-container">
+
+        <div class="about-image">
+            <img src="Chemise_bleu_découpé.png" alt="Photo de Nathan Andrieu">
         </div>
+
+        <div class="about-content">
+            <h3 class="section-title left">À propos</h3>
+
+            <p>
+                Étudiant en BUT Informatique à l’Université Toulouse III Paul Sabatier, 
+                je suis passionné par l'administration système et réseau et la cybersécurité.
+                Je recherche un stage orienté infrastructure, sécurité et automatisation.
+            </p>
+
+            <div class="about-infos">
+                <div><strong>📍 Localisation :</strong> L’Hospitalet (46)</div>
+                <div><strong>🎯 Objectif :</strong> Stage en administration système et réseau</div>
+            </div>
+
+            <div class="about-buttons">
+                <a href="#projets" class="btn">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+        </div>
+
     </div>
 </section>
+
 
 <!-- ================= COMPETENCES ================= -->
 <section id="competences" class="section dark">
@@ -159,52 +170,125 @@
     <div class="container">
         <h3 class="section-title">Formation</h3>
 
-        <ul class="formation-list">
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <li><strong>BUT Informatique</strong> – Université Toulouse III (actuel)</li>
-                </div>
-            
-                <div class="skill-card">
-                    <li><strong>Licence Psychologie</strong> – Université Toulouse Jean Jaurès (2023)</li>
-                </div>
+        <div class="formation-grid">
 
-                <div class="skill-card">
-                    <li><strong>Bac ES</strong> – Lycée Clément Marot, Cahors</li>
-                </div>
-            </div>
-        </ul>
-    </div>
-</section>
-
-<!-- ================= CENTRES D’INTERÊT ================= -->
-<section id="interets" class="section dark">
-    <div class="container">
-        <h3 class="section-title">Centres d’intérêt</h3>
-
-        <div class="interets-grid">
-
-            <div class="interet-card">
-                <h4>💻 Informatique & Homelab</h4>
-                <p>Tests de services, virtualisation, déploiement de serveurs, sécurité et automatisation.</p>
+            <div class="skill-card">
+                <strong>BUT Informatique</strong><br>
+                Université Toulouse III (actuel)
             </div>
 
-            <div class="interet-card">
-                <h4>🔐 Cybersécurité</h4>
-                <p>Veille technologique, protection des systèmes, bonnes pratiques et outils de sécurisation.</p>
+            <div class="skill-card">
+                <strong>Licence Psychologie</strong><br>
+                Université Toulouse Jean Jaurès (2023)
             </div>
 
-            <div class="interet-card">
-                <h4>🏃 Sport & discipline personnelle</h4>
-                <p>Activités sportives pour entretenir rigueur, motivation et esprit d’équipe.</p>
+            <div class="skill-card formation-center">
+                <strong>Bac ES</strong><br>
+                Lycée Clément Marot, Cahors
             </div>
 
         </div>
     </div>
 </section>
 
+<!-- ================= COMPETENCES BUT DACS ================= -->
+<section id="competences-but" class="section dark">
+    <div class="container">
+        <h3 class="section-title">Compétences apportées par le BUT Informatique (Parcours DACS)</h3>
+
+        <div class="competences-grid">
+
+            <!-- REALISER -->
+            <div class="competence-card">
+                <h4>Réaliser</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Développer des applications informatiques simples</li>
+                    <li><strong>Niveau 2 :</strong> Prendre en compte les exigences et aller jusqu'à une application complète</li>
+                    <li><strong>Niveau 3 :</strong> Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...)</li>
+                </ul>
+            </div>
+
+            <!-- OPTIMISER -->
+            <div class="competence-card">
+                <h4>Optimiser</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Appréhender et construire des algorithmes</li>
+                    <li><strong>Niveau 2 :</strong> Sélectionner les algorithmes adéquats pour répondre à un problème donné</li>
+                </ul>
+            </div>
+
+            <!-- ADMINISTRER -->
+            <div class="competence-card">
+                <h4>Administrer</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Installer et configurer un poste de travail</li>
+                    <li><strong>Niveau 2 :</strong> Déployer des services dans une architecture réseau</li>
+                    <li><strong>Niveau 3 :</strong> Faire évoluer et maintenir un système informatique communicant en conditions opérationnelles</li>
+                </ul>
+            </div>
+
+            <!-- GERER -->
+            <div class="competence-card">
+                <h4>Gérer</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Concevoir et mettre en place une base de données à partir d'un cahier des charges client</li>
+                    <li><strong>Niveau 2 :</strong> Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</li>
+                </ul>
+            </div>
+
+            <!-- CONDUIRE -->
+            <div class="competence-card">
+                <h4>Conduire</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Identifier les besoins métiers des clients et des utilisateurs</li>
+                    <li><strong>Niveau 2 :</strong> Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</li>
+                </ul>
+            </div>
+
+            <!-- COLLABORER -->
+            <div class="competence-card">
+                <h4>Collaborer</h4>
+                <ul>
+                    <li><strong>Niveau 1 :</strong> Identifier ses aptitudes pour travailler en équipe</li>
+                    <li><strong>Niveau 2 :</strong> Situer son rôle et ses missions au sein d'une équipe informatique</li>
+                    <li><strong>Niveau 3 :</strong> Manager une équipe informatique</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= CENTRES D’INTERÊT ================= -->
+<section id="interets" class="section">
+    <div class="container">
+        <h3 class="section-title">Centres d’intérêt</h3>
+
+        <div class="interets-grid">
+
+        <div class="interet-card">
+            <h4>🔐 Cybersécurité</h4>
+            <p>Veille technologique, protection des systèmes, bonnes pratiques et outils de sécurisation.</p>
+        </div>
+
+        <div class="interet-card">
+            <h4>🏋️ Haltérophilie</h4>
+            <p>Pratique régulière de l’haltérophilie, qualifié pour les championnats de France universitaires. Discipline, persévérance et performance.</p>
+        </div>
+
+        <div class="interet-card">
+            <h4>📚 Lecture – Science-fiction & Manga</h4>
+            <p>Passion pour les univers de science-fiction, la culture manga et les récits d’anticipation.</p>
+        </div>
+        <div class="interet-card">
+            <h4>🎮 Jeux vidéo & univers numériques</h4>
+            <p>Intérêt pour les jeux orientés stratégie, coopération et résolution de problèmes. Développement de la logique, de la réactivité et de l’esprit d’équipe.</p>
+        </div>
+
+</div>
+</section>
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
+<section id="contact" class="section dark">
     <div class="container">
         <h3 class="section-title">Contact</h3>
 
@@ -230,5 +314,6 @@
 </footer>
 
 </body>
-
 </html>
+
+
